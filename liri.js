@@ -8,6 +8,7 @@ var fs = require("fs");
 
 // Include the axios npm package (Don't forget to run "npm install axios" in this folder first!)
 var axios = require("axios");
+var moment = require("moment");
 
 function concertThis(query) {
     if (query != undefined) {
@@ -17,7 +18,7 @@ function concertThis(query) {
                 for (var i = 0; i < response.data.length; i++) {
                     console.log("\nname of venue: " + response.data[i].venue.name);
                     console.log("venue location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
-                    console.log("datetime: " + response.data[i].datetime);
+                    console.log(response.data[i].datetime.substring(0, 10));
                 }
             })
             .catch(function (error) {
@@ -26,14 +27,13 @@ function concertThis(query) {
     }
     else {
         var input = process.argv.slice(3).join(" ");
-        // Then run a request with axios to the OMDB API with the movie specified
         axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp").then(
             function (response) {
                 console.log("\nhere are the upcoming event details: ")
                 for (var i = 0; i < response.data.length; i++) {
                     console.log("\nname of venue: " + response.data[i].venue.name);
                     console.log("venue location: " + response.data[i].venue.city + ", " + response.data[i].venue.country);
-                    console.log("datetime: " + response.data[i].datetime);
+                    console.log("date of concert: " + moment(response.data[i].datetime.substring(0, 10)).format("MM/DD/YYYY"));
                 }
             })
             .catch(function (error) {
