@@ -21,8 +21,9 @@ Finally, we can type ``node liri.js do-what-it-says`` to execute the arguments f
 As an example, we could write this in the random.txt file: `concert-this,"Ed Sheeran"`, or `spotify-this-song,"Wonderful Tonight"`.
 
 ### Video of the working app is right here:
-*[Youtube link of working app]()
 
-## Technologies used in this node app
+[Youtube link of working app](https://youtu.be/RnUvz4A4XVE)
+
+## Technologies used in this node app/my involvement in app development process...
 
 Of course, Node.js was used, along with the fs, axios, moment, dotenv, and spotify libraries. The code is well-written and reusable. I wrote the entire thing.
