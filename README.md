@@ -16,3 +16,4 @@ You can run the app by typing in
 
 where ``[insert concert/spotify/movie param here]`` can be either ``concert-this``, ``spotify-this-song``, or ``movie-this``; ``[insert name of artist/song/movie here]`` can be the artist name to find their concerts, song name to find spotify info, or movie name to find more info, respectively.
 
+Finally, we can type ``node liri.js do-what-it-says`` to execute the arguments found in the `random.txt` file. That file 
