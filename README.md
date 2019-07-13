@@ -10,4 +10,9 @@ The app utilizes the fs module to read from a text file, the axios module for th
 
 ## How to run the app
 
-You can run the app by typing in ``node liri.js [insert concert/spotify/movie param here] [insert name of artist/song/movie here]``, where ``[insert concert/spotify/movie param here]`` can be ``concert-this``, ``spotify-this-song``, or ``movie-this``; ``[insert name of artist/song/movie here]`` can be the artist name to find their concerts, song name to find spotify info, or movie name to find more info, respectively.
+You can run the app by typing in 
+
+``node liri.js [insert concert/spotify/movie param here] [insert name of artist/song/movie here]``, 
+
+where ``[insert concert/spotify/movie param here]`` can be either ``concert-this``, ``spotify-this-song``, or ``movie-this``; ``[insert name of artist/song/movie here]`` can be the artist name to find their concerts, song name to find spotify info, or movie name to find more info, respectively.
+
